@@ -14,15 +14,15 @@ for (let i = 1; i <= inputValue; i++) {
 function displayResults(responseJson) {
   console.log(responseJson);
   //replace the existing image with the new one
-  $('.results').append(
+  $(".results").append(
     `<img src="${responseJson.message}" class="results-img">`
   )
   //display the results section
-  $('.results').removeClass('hidden');
+  $(".results").removeClass('hidden');
 }
 
 function watchForm() {
-  $('form').submit(event => {
+  $("form").submit(event => {
     event.preventDefault();
     getDogImage();
   });
