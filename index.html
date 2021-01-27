@@ -10,13 +10,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Dog Image API DOM</h1>
-        <p>The user determines the quantity random dog images. Then the results are displayed in the DOM.</p><hr>
+        <h1>Dog Image API by Breed</h1>
+        <p>The user determines a specific dog breed. Then a random image of that specific dog breed will be displayed.</p><hr>
 
         <form>
-            <label for="quantity">Quantity (1-50):</label>
-            <input id="quantity" type="number" name="value" min="1" max="50" value="3" required /><br>
-          <input id="button" type="submit" value="Get dog pics!">
+            <label for="quantity">Select a dog breed:</label>
+            <select name="breeds">
+                <option value="maltese">Maltese</option>
+                <option value="affenpinscher">Affenpinscher</option>
+
+            </select>
+            <br>
+          <input id="button" type="submit" value="Fetch!">
         </form>
 
         <section class="results hidden">
