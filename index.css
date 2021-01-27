@@ -29,6 +29,11 @@ body {
   display: none;
 }
 
+hr {
+  border: 1px solid #000;
+  margin: 30px;
+}
+
 #button {
   margin: 20px;
   padding: 10px;
