@@ -1,3 +1,3 @@
-# Dog Image App by Breed
+# Dog Image App DOM
 
-This app uses a dog image API to generate a random image based on the user's selection of a dog breed.
+This app uses a dog image API to generate random dog images in the DOM.

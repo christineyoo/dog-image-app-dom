@@ -1,13 +1,14 @@
 'use strict';
 
 function getDogImage() {
-const breed = $("option").val();
-console.log(breed);
-    fetch(`https://dog.ceo/breeds/${breed}/images/random`)
+const inputValue = $("#quantity").val();
+for (let i = 1; i <= inputValue; i++) {
+    fetch('https://dog.ceo/api/breeds/image/random')
       .then(response => response.json())
       .then(responseJson => 
         displayResults(responseJson))
       .catch(error => alert('Something went wrong. Try again later.'));
+    }
 }
 
 function displayResults(responseJson) {
